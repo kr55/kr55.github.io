@@ -196,13 +196,13 @@ if (!doNotTrack) {
         </div>
 
         <div class="post-content" id="post-content">
-          <p>We’ll see a quick demo on how &lsquo;SSIS Catalog Migration Wizard&rsquo; migrates on-premises SSIS Catalog in SQL Server to SSIS in Azure Data Factory in just a few clicks.</p>
+          <p>We’ll see a quick demo on how <code>SSIS Catalog Migration Wizard</code> migrates on-premises SSIS Catalog in SQL Server to SSIS in Azure Data Factory in just a few clicks.</p>
 <p>Launch the wizard from your preferred location.</p>
 <h4 id="choose-source">Choose Source</h4>
-<p>Choose &lsquo;SSIS in SQL Server&rsquo; from Source Type drop-down. Provide the SQL Server instance name. To perform operations on the SSIS catalog, we have to use windows authentication. And the user should have the ssis_admin role.</p>
+<p>Choose <code>SSIS in SQL Server</code> from Source Type drop-down. Provide the SQL Server instance name. To perform operations on the SSIS catalog, we have to use windows authentication. And the user should have the ssis_admin role.</p>
 <img src="/posts/ssis/ssis-catalog-migration-wizard/images/ChooseSource.jpg" width="500">
 <h4 id="choose-target">Choose Target</h4>
-<p>Choose &lsquo;SSIS in Azure Data Factory&rsquo; from the Target Type drop-down. Provide Azure SQL Server hostname, admin SQL server authentication user name, and password.</p>
+<p>Choose <code>SSIS in Azure Data Factory</code> from the Target Type drop-down. Provide Azure SQL Server hostname, admin SQL server authentication user name, and password.</p>
 <img src="/posts/ssis/ssis-catalog-migration-wizard/images/ChooseTarget.jpg" width="500">
 <p>Note - This utility only supports SQL authentication for Azure SSIS at the moment.</p>
 <h4 id="select-ssisdb-catalog-folders-to-migrate">Select SSISDB Catalog Folders to Migrate</h4>
@@ -232,7 +232,7 @@ if (!doNotTrack) {
 <h4 id="monitor-the-migration">Monitor the migration</h4>
 <img src="/posts/ssis/ssis-catalog-migration-wizard/images/MigrationFinish.jpg" width="500">
 <p>Any warning or error during the migration gets available against the respective folder in the Result column tooltip of the grid as shown in the above image.</p>
-<p>Note - Sensitive environment variables, project, or package parameter values are encrypted in SSISDB with the master key. Hence, the wizard will not migrate such values. However, it will list such variable names in the Result column tooltip with column value as &ldquo;Warning&rdquo;. You can also save migration reports in txt format by clicking on Report button.</p>
+<p>Note - Sensitive environment variables, project, or package parameter values are encrypted in SSISDB with the master key. Hence, the wizard will not migrate such values. However, it will list such variable names in the Result column tooltip with column value as <code>Warning</code>. You can also save migration reports in txt format by clicking on <code>Report</code> button.</p>
 <p>I hope this extension is helpful to you.</p>
 
         </div>
