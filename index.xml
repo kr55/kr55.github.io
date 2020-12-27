@@ -25,9 +25,9 @@ Background From SQL Server 2012 onwards, Microsoft introduced a new deployment m
       <pubDate>Mon, 08 Jun 2020 06:20:30 +0600</pubDate>
       
       <guid>https://kr55.github.io/posts/ssis/ssis-catalog-migration-wizard/demo/</guid>
-      <description>We’ll see a quick demo on how SSIS Catalog Migration Wizard migrates on-premises SSIS Catalog in SQL Server to SSIS in Azure Data Factory in just a few clicks.
+      <description>We’ll see a quick demo on how &amp;lsquo;SSIS Catalog Migration Wizard&amp;rsquo; migrates on-premises SSIS Catalog in SQL Server to SSIS in Azure Data Factory in just a few clicks.
 Launch the wizard from your preferred location.
-Choose Source Choose SSIS in SQL Server from Source Type drop-down. Provide the SQL Server instance name. To perform operations on the SSIS catalog, we have to use windows authentication. And the user should have the ssis_admin role.</description>
+Choose Source Choose &amp;lsquo;SSIS in SQL Server&amp;rsquo; from Source Type drop-down. Provide the SQL Server instance name. To perform operations on the SSIS catalog, we have to use windows authentication. And the user should have the ssis_admin role.</description>
     </item>
     
     <item>
