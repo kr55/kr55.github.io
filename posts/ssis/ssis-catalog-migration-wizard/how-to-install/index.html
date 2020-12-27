@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+  <head><script src="/livereload.js?port=1313&amp;mindelay=10&amp;v=2" data-no-instant defer></script>
+    <title>How to Install</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/assets/css/layouts/main.css"/>
+<link rel="stylesheet" href="/assets/css/style.css"/>
+<link rel="stylesheet" href="/assets/css/navigators/navbar.css"/>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+
+
+<link rel="icon" type="image/png" href="/images/site/favicon.png" />
+
+
+<link rel="stylesheet" href="/assets/css/style.css"/>
+
+    
+<meta name="description" content="How to Install" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+/>
+<link rel="stylesheet" href="/assets/css/layouts/single.css"/>
+<link rel="stylesheet" href="/assets/css/navigators/sidebar.css">
+
+
+    
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-XXXXXXXXX-X', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    
+  </head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+  
+
+
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+  <div class="container">
+      <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/">
+      <img src="/images/site/main-logo.png">AzureOps</a>
+    <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
+      <ul class="navbar-nav ml-auto">
+      
+      </ul>
+    </div>
+  </div>
+  
+  <img src="/images/site/main-logo.png" class="d-none" id="main-logo">
+  <img src="/images/site/inverted-logo.png" class="d-none" id="inverted-logo">
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <input type="text" value="" placeholder="Search" data-search="" id="search-box" />
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/posts" data-filter="all">Posts</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/posts/ssis/">SSIS</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/posts/ssis/ssis-catalog-migration-wizard/">SSIS Cataloger</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/ssis/ssis-catalog-migration-wizard/about/">About</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/ssis/ssis-catalog-migration-wizard/demo/">Demo</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active" href="/posts/ssis/ssis-catalog-migration-wizard/how-to-install/">How to Install</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(http://localhost:1313/assets/images/configure-bot.svg);'>
+      </div>
+
+      
+      <div class="page-content">
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/author/kunal.png'/>
+          <h5 class="author-name">Kunal Rathi</h5>
+          <p>June 8, 2020</p>
+        </div>
+
+        <div class="title">
+          <h1>How to Install</h1>
+        </div>
+
+        <div class="post-content" id="post-content">
+          
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/IVpYrUijxxo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="use-with-visual-studio-2017">Use with Visual Studio 2017</h3>
+<p><strong>If you have SQL Server Data Tools for Visual Studio 2017 (SSDT 2017) installed:</strong></p>
+<ol>
+<li>
+<p>Download the extension from <strong>Extensions and Updates</strong> under the <strong>Tools</strong> menu item as shown in the image below..
+<img src="/posts/ssis/ssis-catalog-migration-wizard/images/VSMarketPlaceDownload.png" width="700"></p>
+</li>
+<li>
+<p>Restart SSDT 2017 and you should see the tool under the <strong>Tools</strong> menu item.</p>
+</li>
+</ol>
+<p>A good part of this option is that you automatically get an update installed in SSDT whenever a newer version of the wizard is available in the marketplace. Isn’t that great?</p>
+<h3 id="use-with-sql-server-management-studio-2018">Use with SQL Server Management Studio 2018</h3>
+<p><strong>If you have SQL Server Management Studio 2018 (SSMS 2018) installed:</strong></p>
+<p>As the VSIX 2017 installer does not support installation into a VS Shell edition, and generally because SSMS extensions are unsupported, You will have to manually install the extension.</p>
+<ol>
+<li>Download the latest vsix plugin from <a href="https://marketplace.visualstudio.com/items?itemName=AzureOps.ssiscataloger">Visual Studio Marketplace</a>.</li>
+<li>Unzip the downloaded file SSIS.Cataloger.Extension.vsix to a folder named &lsquo;SSIS Cataloger&rsquo; using <a href="https://www.7-zip.org/download.html">7zip</a>.</li>
+<li>Copy this folder (&lsquo;SSIS Cataloger&rsquo;) to <em>C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\Extensions</em> location. You would need administrative permissions to do this.</li>
+<li>Restart SSMS 2018 and you should see the tool under the Tools menu item.
+<img src="/posts/ssis/ssis-catalog-migration-wizard/images/SSMSoption.jpg" width="700"></li>
+</ol>
+<h3 id="use-as-a-standalone">Use as a standalone</h3>
+<p><strong>If you don&rsquo;t wish to use this with either of the above tools, you can use it directly.</strong></p>
+<ol>
+<li>Download the latest vsix plugin from Visual Studio Marketplace.</li>
+<li>Unzip the downloaded file SSIS.Cataloger.Extension.vsix to a folder named &lsquo;SSIS Cataloger&rsquo; using 7zip.</li>
+<li>Place this folder at a preferred location.</li>
+<li>Double click the file &lsquo;SSIS.Cataloger.exe&rsquo;. You can also create a shortcut for this file and use it.</li>
+</ol>
+
+        </div>
+
+        
+        
+
+        
+      <hr />
+        <div class="row next-prev-navigator">
+
+
+  
+
+  
+
+  
+    
+      
+      <div class="col-md-6 previous-article">
+        <a href="/posts/ssis/ssis-catalog-migration-wizard/demo/" class="btn btn-outline-info">
+          <span><i class="fas fa-chevron-circle-left"></i> Prev</span>
+          <br />
+          <span>Demo - Let&#39;s Migrate On-premise SSIS to Azure SSIS</span>
+        </a>
+      </div>
+      
+    
+    
+  
+
+</div>
+
+      <hr />
+      
+      
+          <div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function () {
+    
+    
+    if (window.location.hostname == "localhost") return;
+
+    var dsq = document.createElement("script");
+    dsq.type = "text/javascript";
+    dsq.async = true;
+    var disqus_shortname = "azureops";
+    dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+    (
+      document.getElementsByTagName("head")[0] ||
+      document.getElementsByTagName("body")[0]
+    ).appendChild(dsq);
+  })();
+</script>
+<noscript
+  >Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript"
+    >comments powered by Disqus.</a
+  ></noscript
+>
+<a href="https://disqus.com/" class="dsq-brlink"
+  >comments powered by <span class="logo-disqus">Disqus</span></a
+>
+
+      
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center pl-3">Table of Contents</h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#use-with-visual-studio-2017">Use with Visual Studio 2017</a></li>
+        <li><a href="#use-with-sql-server-management-studio-2018">Use with SQL Server Management Studio 2018</a></li>
+        <li><a href="#use-as-a-standalone">Use as a standalone</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    </div>
+    
+  </section>
+
+    </div>
+
+    
+
+  
+
+
+
+
+  
+
+
+
+
+  
+  
+    
+  
+
+
+<footer class="container-fluid text-center align-content-center footer pb-2">
+  <div class="container pt-5">
+    <div class="row text-left">
+      <div class="col-md-4 col-sm-12">
+        <h5>Navigation</h5>
+        
+        <ul>
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#about">About</a>
+              </li>
+            
+            
+              
+              
+                
+              
+              <li class="nav-item">
+                <a class="smooth-scroll" href="#recent-posts">Recent Posts</a>
+              </li>
+            
+        </ul>
+        
+
+      </div>
+      
+      <div class="col-md-4 col-sm-12">
+        <h5>Contact me:</h5>
+        <ul>
+          
+          <li><span>Email: </span> <span>kunalrathi55@gmail.com</span></li>
+          
+          <li><span>Phone: </span> <span>&#43;91 8956567953</span></li>
+          
+        </ul>
+      </div>
+      
+      
+      <div class="col-md-4 col-sm-12">
+        
+        <p>Stay up to date with email notification</p>
+        <form>
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+            />
+            <small id="emailHelp" class="form-text text-muted"
+              >We&#39;ll never share your email with anyone else.</small
+            >
+          </div>
+          <button type="submit" class="btn btn-info">Submit</button>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+  <hr />
+
+  <div class="container">
+
+    <div class="row text-left">
+
+      <div class="col-md-4">
+   
+      </div>
+
+      <div class="col-md-4 text-center">© 2020 Copyright AzureOps.org.</div>
+	  
+    </div>
+  </div>
+</footer>
+
+    <script src="/assets/js/jquery-3.4.1.min.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+
+<script src="/assets/js/navbar.js"></script>
+<script src="/assets/js/main.js"></script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/assets/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+  </body>
+</html>
