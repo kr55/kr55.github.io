@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:1313/posts/ssis/ssis-cataloger/about/</loc>
+    <loc>http://localhost:1313/posts/ssis/ssis-catalog-migration-wizard/about/</loc>
     <lastmod>2020-06-08T06:20:30+06:00</lastmod>
   </url>
   
@@ -13,12 +13,12 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/posts/ssis/ssis-cataloger/ssis-cataloger/</loc>
+    <loc>http://localhost:1313/posts/ssis/ssis-catalog-migration-wizard/demo/</loc>
     <lastmod>2020-06-08T06:20:30+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/posts/ssis/ssis-cataloger/how-to-install/</loc>
+    <loc>http://localhost:1313/posts/ssis/ssis-catalog-migration-wizard/how-to-install/</loc>
     <lastmod>2020-06-08T06:20:30+06:00</lastmod>
   </url>
   
@@ -33,7 +33,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/posts/ssis/ssis-cataloger/</loc>
+    <loc>http://localhost:1313/posts/ssis/ssis-catalog-migration-wizard/</loc>
     <lastmod>2020-06-08T06:20:30+06:00</lastmod>
   </url>
   

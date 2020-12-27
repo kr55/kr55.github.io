@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head><script src="/livereload.js?port=1313&amp;mindelay=10&amp;v=2" data-no-instant defer></script>
-    <title>How to Install</title>
+    <title>Demo - Let&#39;s Migrate On-premise SSIS to Azure SSIS</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -23,7 +23,7 @@
 <link rel="stylesheet" href="/assets/css/style.css"/>
 
     
-<meta name="description" content="How to Install" />
+<meta name="description" content="Demo - Let&#39;s Migrate On-premise SSIS to Azure SSIS" />
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
@@ -121,7 +121,7 @@ if (!doNotTrack) {
   
     
     <li>
-      <i class="fas fa-minus-circle"></i><a class="active" href="/posts/ssis/ssis-cataloger/">SSIS Cataloger</a>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/posts/ssis/ssis-catalog-migration-wizard/">SSIS Cataloger</a>
       
       <ul class="active">
         
@@ -131,16 +131,7 @@ if (!doNotTrack) {
   
   
     
-    <li><a class="" href="/posts/ssis/ssis-cataloger/about/">About</a></li>
-  
-
-  
-  
-  
-  
-  
-    
-    <li><a class="" href="/posts/ssis/ssis-cataloger/ssis-cataloger/">Demo</a></li>
+    <li><a class="" href="/posts/ssis/ssis-catalog-migration-wizard/about/">About</a></li>
   
 
   
@@ -152,7 +143,16 @@ if (!doNotTrack) {
   
   
     
-    <li><a class="active" href="/posts/ssis/ssis-cataloger/how-to-install/">How to Install</a></li>
+    <li><a class="active" href="/posts/ssis/ssis-catalog-migration-wizard/demo/">Demo</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/ssis/ssis-catalog-migration-wizard/how-to-install/">How to Install</a></li>
   
 
 
@@ -180,7 +180,7 @@ if (!doNotTrack) {
   <div class="content">
     <div class="container p-0 read-area">
       
-      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(http://localhost:1313/assets/images/configure-bot.svg);'>
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(http://localhost:1313/assets/images/default-hero.jpg);'>
       </div>
 
       
@@ -192,45 +192,49 @@ if (!doNotTrack) {
         </div>
 
         <div class="title">
-          <h1>How to Install</h1>
+          <h1>Demo - Let&#39;s Migrate On-premise SSIS to Azure SSIS</h1>
         </div>
 
         <div class="post-content" id="post-content">
-          
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/IVpYrUijxxo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-<h3 id="use-with-visual-studio-2017">Use with Visual Studio 2017</h3>
-<p><strong>If you have SQL Server Data Tools for Visual Studio 2017 (SSDT 2017) installed:</strong></p>
-<ol>
+          <h3 id="demo---lets-migrate-on-premise-ssis-to-azure-ssis">Demo - Let&rsquo;s Migrate On-premise SSIS to Azure SSIS!</h3>
+<p>We’ll see a quick demo on how SSIS Catalog Migration Wizard migrates on-premises SSIS Catalog in SQL Server to SSIS in Azure Data Factory in just a few clicks.</p>
+<p>Launch the wizard from your preferred location.</p>
+<h4 id="choose-source">Choose Source</h4>
+<p>Choose SSIS in SQL Server from Source Type drop-down. Provide the SQL Server instance name. To perform operations on the SSIS catalog, we have to use windows authentication. And the user should have the ssis_admin role.</p>
+<img src="/posts/ssis/ssis-catalog-migration-wizard/images/ChooseSource.jpg" width="500">
+<h4 id="choose-target">Choose Target</h4>
+<p>Choose SSIS in Azure Data Factory from the Target Type drop-down. Provide Azure SQL Server hostname, admin SQL server authentication user name, and password.</p>
+<img src="/posts/ssis/ssis-catalog-migration-wizard/images/ChooseTarget.jpg" width="500">
+<p>Note - This utility only supports SQL authentication for Azure SSIS at the moment.</p>
+<h4 id="select-ssisdb-catalog-folders-to-migrate">Select SSISDB Catalog Folders to Migrate</h4>
+<p>Choose the catalog folders from the listview that you want to migrate.</p>
+<img src="/posts/ssis/ssis-catalog-migration-wizard/images/ChooseCatalogFolders.jpg" width="500">
+<p>At the bottom, choose the catalog options:</p>
+<ul>
 <li>
-<p>Download the extension from <strong>Extensions and Updates</strong> under the <strong>Tools</strong> menu item as shown in the image below..
-<img src="/posts/ssis/ssis-cataloger/images/VSMarketPlaceDownload.png" width="700"></p>
+<p>Migrate projects - Select the checkbox if you want to migrate SSIS projects (.ispac) files from the selected list of folders.</p>
 </li>
 <li>
-<p>Restart SSDT 2017 and you should see the tool under the <strong>Tools</strong> menu item.</p>
+<p>Migrate environments, project and package parameter configurations. - Select the checkbox if you want to migrate catalog Environments. This will apply environment references to SSIS projects and environment variable to parameter mapping. It also includes project and package parameters with default values set in the source SSISDB.</p>
 </li>
-</ol>
-<p>A good part of this option is that you automatically get an update installed in SSDT whenever a newer version of the wizard is available in the marketplace. Isn’t that great?</p>
-<h3 id="use-with-sql-server-management-studio-2018">Use with SQL Server Management Studio 2018</h3>
-<p><strong>If you have SQL Server Management Studio 2018 (SSMS 2018) installed:</strong></p>
-<p>As the VSIX 2017 installer does not support installation into a VS Shell edition, and generally because SSMS extensions are unsupported, You will have to manually install the extension.</p>
-<ol>
-<li>Download the latest vsix plugin from <a href="https://marketplace.visualstudio.com/items?itemName=AzureOps.ssiscataloger">Visual Studio Marketplace</a>.</li>
-<li>Unzip the downloaded file SSIS.Cataloger.Extension.vsix to a folder named &lsquo;SSIS Cataloger&rsquo; using <a href="https://www.7-zip.org/download.html">7zip</a>.</li>
-<li>Copy this folder (&lsquo;SSIS Cataloger&rsquo;) to <em>C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\Extensions</em> location. You would need administrative permissions to do this.</li>
-<li>Restart SSMS 2018 and you should see the tool under the Tools menu item.
-<img src="/posts/ssis/ssis-cataloger/images/SSMSoption.jpg" width="700"></li>
-</ol>
-<h3 id="use-as-a-standalone">Use as a standalone</h3>
-<p><strong>If you don&rsquo;t wish to use this with either of the above tools, you can use it directly.</strong></p>
-<ol>
-<li>Download the latest vsix plugin from Visual Studio Marketplace.</li>
-<li>Unzip the downloaded file SSIS.Cataloger.Extension.vsix to a folder named &lsquo;SSIS Cataloger&rsquo; using 7zip.</li>
-<li>Place this folder at a preferred location.</li>
-<li>Double click the file &lsquo;SSIS.Cataloger.exe&rsquo;. You can also create a shortcut for this file and use it.</li>
-</ol>
+<li>
+<p>Delete selected folders from the source Catalog. (Preview) - Select the checkbox if you want to delete selected Catalog folders from source server.</p>
+</li>
+</ul>
+<h4 id="replace-your-environment-variable-values">Replace your environment variable values</h4>
+<p><em>While you are on your way, would you like to replace your environment variable values?</em>*</p>
+<p>If you wish to replace part of the environment variables, project, or package parameter values with new values, configure the replacement rules on this screen.</p>
+<img src="/posts/ssis/ssis-catalog-migration-wizard/images/ReplaceValues.jpg" width="500">
+<p>As shown in the image above, SSIS Catalog Migration Wizard replaces all occurrences of substring <em>Data Source=server1</em> with <em>Data Source=server2</em>, <em>User ID=user1</em> with <em>User ID=user2</em>, and <em>C:\ETL\Folder</em> with <em>D:\ETL\Folder</em> in all the environment variables and project and package parameter values.</p>
+<p>This is useful when you are setting up a parallel environment for your ETL workload and some configuration is different in the target environment. However, this is an optional step. If you don&rsquo;t want to replace anything, you can skip this step and click Next.</p>
+<h4 id="complete-the-wizard">Complete the Wizard</h4>
+<p>Review the deployment summary. And if everything looks ok, click Finish.</p>
+<img src="/posts/ssis/ssis-catalog-migration-wizard/images/MigrationSummary.jpg" width="500">
+<h4 id="monitor-the-migration">Monitor the migration</h4>
+<img src="/posts/ssis/ssis-catalog-migration-wizard/images/MigrationFinish.jpg" width="500">
+<p>Any warning or error during the migration gets available against the respective folder in the Result column tooltip of the grid as shown in the above image.</p>
+<p>Note - Sensitive environment variables, project, or package parameter values are encrypted in SSISDB with the master key. Hence, the wizard will not migrate such values. However, it will list such variable names in the Result column tooltip with column value as &ldquo;Warning&rdquo;. You can also save migration reports in txt format by clicking on Report button.</p>
+<p>I hope this extension is helpful to you.</p>
 
         </div>
 
@@ -245,20 +249,36 @@ if (!doNotTrack) {
   
 
   
-
-  
     
       
       <div class="col-md-6 previous-article">
-        <a href="/posts/ssis/ssis-cataloger/ssis-cataloger/" class="btn btn-outline-info">
+        <a href="/posts/ssis/ssis-catalog-migration-wizard/about/" class="btn btn-outline-info">
           <span><i class="fas fa-chevron-circle-left"></i> Prev</span>
           <br />
-          <span>Demo - Let&#39;s Migrate On-premise SSIS to Azure SSIS</span>
+          <span>About</span>
         </a>
       </div>
       
     
     
+      
+        
+        
+          
+              
+          
+        
+        <div class="col-md-6 next-article">
+          <a href="/posts/ssis/ssis-catalog-migration-wizard/how-to-install/" class="btn btn-outline-info">
+            <span>Next <i class="fas fa-chevron-circle-right"></i></span>
+            <br />
+            <span>How to Install</span>
+          </a>
+        </div>
+      
+    
+  
+
   
 
 </div>
@@ -314,9 +334,16 @@ if (!doNotTrack) {
   <ul>
     <li>
       <ul>
-        <li><a href="#use-with-visual-studio-2017">Use with Visual Studio 2017</a></li>
-        <li><a href="#use-with-sql-server-management-studio-2018">Use with SQL Server Management Studio 2018</a></li>
-        <li><a href="#use-as-a-standalone">Use as a standalone</a></li>
+        <li><a href="#demo---lets-migrate-on-premise-ssis-to-azure-ssis">Demo - Let&rsquo;s Migrate On-premise SSIS to Azure SSIS!</a>
+          <ul>
+            <li><a href="#choose-source">Choose Source</a></li>
+            <li><a href="#choose-target">Choose Target</a></li>
+            <li><a href="#select-ssisdb-catalog-folders-to-migrate">Select SSISDB Catalog Folders to Migrate</a></li>
+            <li><a href="#replace-your-environment-variable-values">Replace your environment variable values</a></li>
+            <li><a href="#complete-the-wizard">Complete the Wizard</a></li>
+            <li><a href="#monitor-the-migration">Monitor the migration</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>

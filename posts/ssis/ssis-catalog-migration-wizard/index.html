@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head><script src="/livereload.js?port=1313&amp;mindelay=10&amp;v=2" data-no-instant defer></script>
-    <title>About</title>
+    <title>SSIS Catalog Migration Wizard</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -23,13 +23,8 @@
 <link rel="stylesheet" href="/assets/css/style.css"/>
 
     
-<meta name="description" content="About" />
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
-/>
-<link rel="stylesheet" href="/assets/css/layouts/single.css"/>
-<link rel="stylesheet" href="/assets/css/navigators/sidebar.css">
+    <link rel="stylesheet" href="/assets/css/layouts/list.css">
+    <link rel="stylesheet" href="/assets/css/navigators/sidebar.css">
 
 
     
@@ -88,6 +83,9 @@ if (!doNotTrack) {
 
       
       
+  
+  
+
   <section class="sidebar-section" id="sidebar-section">
     <div class="sidebar-holder">
       <div class="sidebar" id="sidebar">
@@ -121,7 +119,7 @@ if (!doNotTrack) {
   
     
     <li>
-      <i class="fas fa-minus-circle"></i><a class="active" href="/posts/ssis/ssis-cataloger/">SSIS Cataloger</a>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/posts/ssis/ssis-catalog-migration-wizard/">SSIS Cataloger</a>
       
       <ul class="active">
         
@@ -129,12 +127,9 @@ if (!doNotTrack) {
   
   
   
-    
-    
-  
   
     
-    <li><a class="active" href="/posts/ssis/ssis-cataloger/about/">About</a></li>
+    <li><a class="" href="/posts/ssis/ssis-catalog-migration-wizard/about/">About</a></li>
   
 
   
@@ -143,7 +138,7 @@ if (!doNotTrack) {
   
   
     
-    <li><a class="" href="/posts/ssis/ssis-cataloger/ssis-cataloger/">Demo</a></li>
+    <li><a class="" href="/posts/ssis/ssis-catalog-migration-wizard/demo/">Demo</a></li>
   
 
   
@@ -152,7 +147,7 @@ if (!doNotTrack) {
   
   
     
-    <li><a class="" href="/posts/ssis/ssis-cataloger/how-to-install/">How to Install</a></li>
+    <li><a class="" href="/posts/ssis/ssis-catalog-migration-wizard/how-to-install/">How to Install</a></li>
   
 
 
@@ -177,152 +172,98 @@ if (!doNotTrack) {
       
       
 <section class="content-section" id="content-section">
-  <div class="content">
-    <div class="container p-0 read-area">
+  <div class="content container-fluid" id="content">
+    <div class="container-fluid post-card-holder" id="post-card-holder">
       
-      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(http://localhost:1313/assets/images/about-section-hero.svg);'>
+      
+        <div class="post-card">
+  <a href="/posts/ssis/ssis-catalog-migration-wizard/about/" class="post-card-link">
+    <div class="card">
+      <div class="card-head">
+        <img class="card-img-top" src='/assets/images/about-section-hero.svg'/>
       </div>
-
-      
-      <div class="page-content">
-        <div class="author-profile ml-auto align-self-lg-center">
-          <img class="rounded-circle" src='/images/author/kunal.png'/>
-          <h5 class="author-name">Kunal Rathi</h5>
-          <p>June 8, 2020</p>
-        </div>
-
-        <div class="title">
-          <h1>About</h1>
-        </div>
-
-        <div class="post-content" id="post-content">
-          <p>Migrate SSIS catalog to new server quickly using SSIS Catalog Migration Wizard.</p>
-<p>Do you want to:</p>
-<ul>
-<li>migrate ssis to azure data factory</li>
-<li>migrate ssisdb from one server to another</li>
-<li>migrate ssis catalog from 2012 to 2016 (or any version of SQL Server) etc.</li>
-</ul>
-<p>Then you are at right place!</p>
-<h3 id="background">Background</h3>
-<p>From SQL Server 2012 onwards, Microsoft introduced a new deployment model in SSIS, called the project deployment model. This new model has many benefits in terms of managing SSIS project deployments, executions, and configurations. With every new version of SQL Server, the SSIS Catalog is also getting upgraded with new features. In this article, I will describe how we can migrate the SSIS Catalog from one SQL Server instance to another using the SSIS Catalog Migration Wizard.</p>
-<p>The SSIS Integration Services Catalog consists of the following artifacts:</p>
-<ul>
-<li>SSIS Builds (.ispac files) - Contains several SSIS packages with project and package parameters.</li>
-<li>Environments - Stores configurations of SSIS projects. These variables are used to configure the SSIS project and package parameters of SSIS projects.</li>
-</ul>
-<p>This quick utility will help you migrate the SSIS catalog in a just few clicks.</p>
-<h3 id="ssis-catalog-migration-wizard">SSIS Catalog Migration Wizard</h3>
-<p>This quick wizard once installed, can be launched from SQL Server Management Studio (SSMS) 2018 or SQL Server Data Tools (SSDT) 2017 for Visual Studio 2017. Alternatively, you can use it as a standalone tool if you don’t wish you add it as a plugin.</p>
-<img src="/posts/ssis/ssis-cataloger/images/Welcome.jpg" width="500">
-<p>The wizard supports the following source and target types.</p>
-<ul>
-<li>
-<p>SSIS for SQL Server - SSIS catalog enabled in SQL Server.</p>
-</li>
-<li>
-<p>SSIS for Azure Data Factory - This is used when you want to run SSIS packages in Azure using Azure data factory pipelines.</p>
-</li>
-<li>
-<p>File System - SSIS Catalog exported to the file system. This can be used as a staged migration when you don’t have access to source and target SQL Server connections at the same time.</p>
-</li>
-</ul>
-
-        </div>
-
-        
-        
-
-        
-      <hr />
-        <div class="row next-prev-navigator">
-
-
-  
-    
-    
-      
-        
-        
-        <div class="col-md-12 next-article">
-          <a href="/posts/ssis/ssis-cataloger/ssis-cataloger/" class="btn btn-outline-info">
-            <span>Next <i class="fas fa-chevron-circle-right"></i></span>
-            <br />
-            <span>Demo - Let&#39;s Migrate On-premise SSIS to Azure SSIS</span>
-          </a>
-        </div>
-      
-    
-  
-
-  
-
-  
-
-</div>
-
-      <hr />
-      
-      
-          <div id="disqus_thread"></div>
-<script type="text/javascript">
-  (function () {
-    
-    
-    if (window.location.hostname == "localhost") return;
-
-    var dsq = document.createElement("script");
-    dsq.type = "text/javascript";
-    dsq.async = true;
-    var disqus_shortname = "azureops";
-    dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
-    (
-      document.getElementsByTagName("head")[0] ||
-      document.getElementsByTagName("body")[0]
-    ).appendChild(dsq);
-  })();
-</script>
-<noscript
-  >Please enable JavaScript to view the
-  <a href="https://disqus.com/?ref_noscript"
-    >comments powered by Disqus.</a
-  ></noscript
->
-<a href="https://disqus.com/" class="dsq-brlink"
-  >comments powered by <span class="logo-disqus">Disqus</span></a
->
-
-      
+      <div class="card-body">
+        <h5 class="card-title">About</h5>
+        <p class="card-text post-summary">Migrate SSIS catalog to new server quickly using SSIS Catalog Migration Wizard.
+Do you want to:
+ migrate ssis to azure data factory migrate ssisdb from one server to another migrate ssis catalog from 2012 to 2016 (or any version of SQL Server) etc.  Then you are at right place!
+Background From SQL Server 2012 onwards, Microsoft introduced a new deployment model in SSIS, called the project deployment model. This new model has many benefits in terms of managing SSIS project deployments, executions, and configurations.</p>
+      </div>
+      <div class="card-footer">
+        <span class="float-left">June 8, 2020</span>
+        <a
+        href="/posts/ssis/ssis-catalog-migration-wizard/about/"
+        class="float-right btn btn-outline-info btn-sm"
+        >Read</a
+        >
       </div>
     </div>
+  </a>
+</div>
+
+      
+        <div class="post-card">
+  <a href="/posts/ssis/ssis-catalog-migration-wizard/demo/" class="post-card-link">
+    <div class="card">
+      <div class="card-head">
+        <img class="card-img-top" src='/assets/images/default-hero.jpg'/>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Demo - Let&#39;s Migrate On-premise SSIS to Azure SSIS</h5>
+        <p class="card-text post-summary">Demo - Let&rsquo;s Migrate On-premise SSIS to Azure SSIS! We’ll see a quick demo on how SSIS Catalog Migration Wizard migrates on-premises SSIS Catalog in SQL Server to SSIS in Azure Data Factory in just a few clicks.
+Launch the wizard from your preferred location.
+Choose Source Choose SSIS in SQL Server from Source Type drop-down. Provide the SQL Server instance name. To perform operations on the SSIS catalog, we have to use windows authentication.</p>
+      </div>
+      <div class="card-footer">
+        <span class="float-left">June 8, 2020</span>
+        <a
+        href="/posts/ssis/ssis-catalog-migration-wizard/demo/"
+        class="float-right btn btn-outline-info btn-sm"
+        >Read</a
+        >
+      </div>
+    </div>
+  </a>
+</div>
+
+      
+        <div class="post-card">
+  <a href="/posts/ssis/ssis-catalog-migration-wizard/how-to-install/" class="post-card-link">
+    <div class="card">
+      <div class="card-head">
+        <img class="card-img-top" src='/assets/images/configure-bot.svg'/>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">How to Install</h5>
+        <p class="card-text post-summary">Use with Visual Studio 2017 If you have SQL Server Data Tools for Visual Studio 2017 (SSDT 2017) installed:
+  Download the extension from Extensions and Updates under the Tools menu item as shown in the image below..   Restart SSDT 2017 and you should see the tool under the Tools menu item.
+  A good part of this option is that you automatically get an update installed in SSDT whenever a newer version of the wizard is available in the marketplace.</p>
+      </div>
+      <div class="card-footer">
+        <span class="float-left">June 8, 2020</span>
+        <a
+        href="/posts/ssis/ssis-catalog-migration-wizard/how-to-install/"
+        class="float-right btn btn-outline-info btn-sm"
+        >Read</a
+        >
+      </div>
+    </div>
+  </a>
+</div>
+
+      
+    </div>
+    <div class="paginator">
+      
+
+
+    </div>
   </div>
-  
 </section>
 
 
       
-      
-  <section class="toc-section" id="toc-section">
-    
-    <div class="toc-holder">
-      <h5 class="text-center pl-3">Table of Contents</h5>
-      <hr>
-      <div class="toc">
-        <nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#background">Background</a></li>
-        <li><a href="#ssis-catalog-migration-wizard">SSIS Catalog Migration Wizard</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-      </div>
-    </div>
-    
-  </section>
-
+       
     </div>
 
     
@@ -433,12 +374,7 @@ if (!doNotTrack) {
 
     
     
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
-<script src="/assets/js/single.js"></script>
-<script>
-  hljs.initHighlightingOnLoad();
-</script>
-
+    <script src="/assets/js/list.js"></script>
 
   </body>
 </html>
