@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SSIS Catalog Migration Wizard on AzureOps</title>
-    <link>http://localhost:1313/posts/ssis/ssis-catalog-migration-wizard/</link>
+    <link>https://kr55.github.io/posts/ssis/ssis-catalog-migration-wizard/</link>
     <description>Recent content in SSIS Catalog Migration Wizard on AzureOps</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Jun 2020 06:20:30 +0600</lastBuildDate><atom:link href="http://localhost:1313/posts/ssis/ssis-catalog-migration-wizard/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Jun 2020 06:20:30 +0600</lastBuildDate><atom:link href="https://kr55.github.io/posts/ssis/ssis-catalog-migration-wizard/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>http://localhost:1313/posts/ssis/ssis-catalog-migration-wizard/about/</link>
+      <link>https://kr55.github.io/posts/ssis/ssis-catalog-migration-wizard/about/</link>
       <pubDate>Mon, 08 Jun 2020 06:20:30 +0600</pubDate>
       
-      <guid>http://localhost:1313/posts/ssis/ssis-catalog-migration-wizard/about/</guid>
+      <guid>https://kr55.github.io/posts/ssis/ssis-catalog-migration-wizard/about/</guid>
       <description>Migrate SSIS catalog to new server quickly using SSIS Catalog Migration Wizard.
 Do you want to:
  migrate ssis to azure data factory migrate ssisdb from one server to another migrate ssis catalog from 2012 to 2016 (or any version of SQL Server) etc.  Then you are at right place!
@@ -21,10 +21,10 @@ Background From SQL Server 2012 onwards, Microsoft introduced a new deployment m
     
     <item>
       <title>Demo - Let&#39;s Migrate On-premise SSIS to Azure SSIS</title>
-      <link>http://localhost:1313/posts/ssis/ssis-catalog-migration-wizard/demo/</link>
+      <link>https://kr55.github.io/posts/ssis/ssis-catalog-migration-wizard/demo/</link>
       <pubDate>Mon, 08 Jun 2020 06:20:30 +0600</pubDate>
       
-      <guid>http://localhost:1313/posts/ssis/ssis-catalog-migration-wizard/demo/</guid>
+      <guid>https://kr55.github.io/posts/ssis/ssis-catalog-migration-wizard/demo/</guid>
       <description>Demo - Let&amp;rsquo;s Migrate On-premise SSIS to Azure SSIS! We’ll see a quick demo on how SSIS Catalog Migration Wizard migrates on-premises SSIS Catalog in SQL Server to SSIS in Azure Data Factory in just a few clicks.
 Launch the wizard from your preferred location.
 Choose Source Choose SSIS in SQL Server from Source Type drop-down. Provide the SQL Server instance name. To perform operations on the SSIS catalog, we have to use windows authentication.</description>
@@ -32,10 +32,10 @@ Choose Source Choose SSIS in SQL Server from Source Type drop-down. Provide the 
     
     <item>
       <title>How to Install</title>
-      <link>http://localhost:1313/posts/ssis/ssis-catalog-migration-wizard/how-to-install/</link>
+      <link>https://kr55.github.io/posts/ssis/ssis-catalog-migration-wizard/how-to-install/</link>
       <pubDate>Mon, 08 Jun 2020 06:20:30 +0600</pubDate>
       
-      <guid>http://localhost:1313/posts/ssis/ssis-catalog-migration-wizard/how-to-install/</guid>
+      <guid>https://kr55.github.io/posts/ssis/ssis-catalog-migration-wizard/how-to-install/</guid>
       <description>Use with Visual Studio 2017 If you have SQL Server Data Tools for Visual Studio 2017 (SSDT 2017) installed:
   Download the extension from Extensions and Updates under the Tools menu item as shown in the image below..   Restart SSDT 2017 and you should see the tool under the Tools menu item.
   A good part of this option is that you automatically get an update installed in SSDT whenever a newer version of the wizard is available in the marketplace.</description>
